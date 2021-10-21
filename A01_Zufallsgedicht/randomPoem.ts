@@ -6,16 +6,17 @@ namespace randomPoem {
    let satz: string = "";
 
     
-   for (let i: number = 6; i <= things.length; i--) {
-        if (i == 0) {
-            break;
-        }
-        getVerse(names, whattodos, things, satz);
+   for (let i: number = 6; i >= 1; i--) {
+        
+        let _satz: string = getVerse(names, whattodos, things);
+        console.log(_satz);
     }
 
 
-   function getVerse (_names: string[], _whattodos: string[], _things: string[], _satz: string ): string {
+   function getVerse (_names: string[], _whattodos: string[], _things: string[] ): string {
     
+let _satz: string = " ";    
+
 let zufallname: number = Math.floor(Math.random() * _names.length);
 _satz += _names.splice(zufallname, 1) + " ";
 
@@ -25,7 +26,7 @@ _satz += _whattodos.splice(zufalltodo, 1) + " ";
 let zufallthing: number = Math.floor(Math.random() * _things.length);
 _satz += _things.splice(zufallthing, 1) + " ";
 
-console.log(_satz);
+
 return _satz;
 }
 }
