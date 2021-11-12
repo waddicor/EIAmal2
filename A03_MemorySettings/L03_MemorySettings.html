@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L03 Memory</title>
+    <link rel="stylesheet" href="L03_MemorySettings.css" />
+    <script src="L03_MemorySettings.js" type="text/javascript" charset="utf-8" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<h1>Memory Spiel</h1>   
+    <div  id="form">
+        <form>
+            <div id="divCardAmount">
+                <label for="pairs">Anzahl der Kartenpaare (5-25): </label>
+                <input type="number" name="pairs" id="pairs" min="5" max="25" step="1" value="5">
+            </div> <br>
+
+            <div id="divCardSize">
+                <label for="size">Kartengröße: </label>
+                <input type="range" id="size" name="size" min="100" max="200" value="100" step="1">
+            </div> <br>
+            
+            <div id="divBackground">
+                <label for="background">Hintergrundfarbe: </label>
+                <input id="background" name="background" type="color" value="#ffffff">
+            </div><br>
+
+            <div id="divFontColor">
+                <label for="fontColor">Schriftfarbe: </label>
+                <input id="fontColor" name="fontColor" type="color" value="#ffffff"><br>
+            </div><br>
+
+            <div id="divCardsColor">
+                <label for="cardsColor">Kartenfarbe: </label>
+                <input id="cardsColor" name="cardsColors" type="color" value="#ffffff"><br>
+            </div><br>
+
+            <div>
+            <p>Schriftart: </p>
+                <input type="radio" id="monospace" name="font" value="Arial">
+                <label for="arial">Arial</label>
+
+                <input type="radio" id="impact" name="font" value="Impact">
+                <label for="impact">Impact</label>
+
+                <input type="radio" id="georgia" name="font" value="Georgia">
+                <label for="georgia">Georgia</label>
+            </div><br>
+
+        </form>
+    </div>
+
+    <button id="startButton" name="startButton">Start Game!</button>
+
+
+    <div id="memoryArea"></div>
+
+</body>
+
+</html>
