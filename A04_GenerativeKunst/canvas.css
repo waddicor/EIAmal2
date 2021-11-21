@@ -1,0 +1,32 @@
+body {
+    color: white;
+    font-family: 'Arial', Tahoma, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin-left: 750px;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    margin-left: 250px;
+}
+
+.canvas {
+    height: 100%;
+    margin-left: -200px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: rgb(0, 0, 0) ridge 20px;
+    
+}
+.reloadCanvas {
+    position: absolute;
+    margin-top: -450px;
+    margin-left: -500px;
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: large;
+}
